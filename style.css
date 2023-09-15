@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    min-height:5vh;
+    background-color: #252B48;
+    color: white;
+    padding:10px;
+}
+nav img{
+    width: 80px;
+}
+nav h1{
+    font-size: 40px;
+    font-family: 'Bruno Ace SC', cursive;
+/*  */
+}
+.section1{
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 84vh;
+    text-align: center;
+    
+}
+.section1 img{
+    width:500px;
+}
+.section1 h1{
+    font-family:'Josefin Sans', sans-serif; ;
+    margin-top: 80px;
+    font-size:50px;
+    
+}
+.section2{
+    margin:10px;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgb(209, 231, 250);
+    border-radius: 10px;
+
+}
+.section2 h2{
+    font-size: 30px;
+    color:rgb(107, 17, 190);
+}
+.section2 p{
+    font-size: 20px;
+}
+.qus{
+    margin-bottom: 20px;
+}
+.section3{
+    background-color: rgb(207, 240, 200);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+.card{
+    text-align: center;
+    
+}
+h2{
+    font-size: 33px;
+    margin: 10px;
+}
+.card h3{
+    font-size:30px;
+}
+.card p{
+    font-size: 20px;
+}
+.cards{
+    display: flex;
+    margin-top:30px ;
+}
+.card{
+    background-color: rgb(58, 5, 107);
+    border-radius: 30px;
+    margin: 10px;
+    padding:20px;
+    color:white;
+}
+.cards .card img{
+    width:130px;
+}
+.card p{
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.btn a{
+    padding:15px;
+    background-color: yellow;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+.section4{
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12b8fa;
+}
+
+.text{
+    position: absolute;
+    font-size: 130px;
+    color:rgb(255, 255, 255);
+}
+.back img{
+    animation:anim 2s infinite;
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* responsive section */
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .sec-4-img img {
+        width:130px;
+    }
+    .text{
+        font-size: 70px;
+    
+    }
+    .back img{
+        width:520px;
+    }
+}
